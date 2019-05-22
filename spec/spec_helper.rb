@@ -113,4 +113,7 @@ end
 # For RSpec 2.x and 3.x
 RSpec.configure { |c| c.include RSpecMixin }
 
+  Slack.configure do |config|
+    config.token = ENV['SLACK_API_TOKEN']
+  end
 end
